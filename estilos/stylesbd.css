@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Ajusta esta línea */
+}
+
+/* Otra opción es agregar flex-grow: 1 al h1 */
+header h1 {
+    margin-left: 15px;
+    font-size: 25px;
+    flex-grow: 1; /* Ajusta esta línea */
+}
+
+.header-icons img {
+    width: 37px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#carrito-icon {
+    display: block;
+    margin-left: 1500px;
+}
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+}
+
+/* Estilos para la sección de productos */
+.productos-lista {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilos para cada producto */
+.producto {
+    width: calc(33.33% - 20px);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.producto img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.producto-info {
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.producto-nombre {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.producto-precio {
+    font-size: 16px;
+    color: #e44d26; /* Color naranja para el precio */
+}
+
+/* Estilos para el botón de agregar al carrito */
+.producto button {
+    padding: 14px 12px;
+    border-radius: 10px;
+    background-color: #47c24b;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.producto button:hover {
+    background-color: #65b569;
+}
